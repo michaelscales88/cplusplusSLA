@@ -16,6 +16,11 @@ Call::Call(int clientName, int newCallId, int intNumber, int extNumber,
 		extNumber(extNumber), answered(answered), startTime(0), endTime(0) {
 	setTime(startTime, endTime);
 }
+#if 0
+Call::~Call(){
+	delete this;
+}
+#endif
 
 int Call::getClientName() const {
 	return clientName;

@@ -32,6 +32,8 @@ class Call {
 		int getEndTime() const;
 		bool isAnswered() const;	
 		void display( ostream & out ) const;
+		//~Call();
+		
 		/***** Assignment *****/
 		bool operator< (const Call & rightHandSide);
 		/*------------------------------------------------------------------------
